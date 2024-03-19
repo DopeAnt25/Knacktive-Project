@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs & Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <div class="top-bar">
+        <div class="contact-info">
+            114 W. Third St. | Maryville, MO 64468 | 660-582-5121
+        </div>
+    </div>
     <header>
         <h1>Affordable Connectivity Program</h1>
         <p>Bringing affordable internet access to everyone</p>
@@ -27,24 +37,34 @@
             <p>Answer 2.</p>
             <!-- Add more FAQ items as needed -->
         </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any further questions or need assistance, please feel free to contact us:</p>
-            <ul>
-                <li>Email: info@yourdomain.com</li>
-                <li>Phone: 123-456-7890</li>
-                <li>Address: 123 Main Street, City, State, ZIP</li>
-            </ul>
-            <p>Alternatively, you can fill out the contact form below:</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any further questions or need assistance, please feel free to contact us:</p>
+                <ul>
+                    <li>Email: info@yourdomain.com</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Address: 123 Main Street, City, State, ZIP</li>
+                </ul>
+            </div>
+            <div class="form-container">
+                <p>Alternatively, you can fill out the contact form below:</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </section>
     </div>
 </body>

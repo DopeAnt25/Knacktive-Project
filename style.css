@@ -1,27 +1,49 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Balboa', Arial, sans-serif; /* Use Balboa font with fallback to Arial and generic sans-serif */
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
+/* Header Styles */
 header {
     background-color: #f0f0f0;
     padding: 20px 0;
     text-align: center;
 }
 
-h1, h2, h3 {
-    color: #333;
+/* Heading Styles */
+h1, h3{
+    color: #2a2b6f; /* Dark blue */
 }
 
+h2 {
+    color: #f59f1d; /* Yellow */
+    font-family: balboa, sans-serif;
+    font-style: bold;
+    font-weight: 600;
+}
+/*Paragraph Styles*/
+p{
+    color: #2a2b6f; /* Dark blue */
+
+}
+
+/* Section Styles */
 section {
     padding: 20px;
     border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
 }
 
+section:hover {
+    background-color: #f9f9f9; 
+}
+
+/* Navigation Styles */
 nav {
-    background-color: #333;
+    background-color: #2a2b6f;
     color: #fff;
     text-align: center;
 }
@@ -30,10 +52,12 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 10px; /* Add margins around each item */
 }
 
 nav ul li a {
@@ -41,18 +65,24 @@ nav ul li a {
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smoother effect */
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #36469d; /* Darker background color on hover */
+    color: #fff; /* Change text color on hover */
+    text-decoration: underline; 
+
 }
 
+/* Container Styles */
 .container {
     width: 80%;
     margin: auto;
     padding: 20px;
 }
 
+/* Benefits Section Styles */
 .benefits {
     display: flex;
     justify-content: space-between;
@@ -64,8 +94,51 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Style for the contact container */
+.contact-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between;
+}
+
+/* Style for the contact info */
+.contact-info {
+    margin-right: 20px; /* Add spacing between contact info and form */
+}
+
+/* Style for the form container */
+.form-container {
+    flex: 1;
+}
+
+/* top bar styles*/
+.top-bar {
+    background-color: #ddd; 
+    color: #2a2b6f;
+    padding: 5px 20px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.contact-info {
+    display: inline-block; /* Make the div only as wide as the content */
+}
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .benefit {
         flex-basis: 100%;
+    }
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+    }
+    .contact-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items vertically */
+    }
+
+    .contact-info {
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add margin between contact info and form */
     }
 }
