@@ -123,6 +123,57 @@ nav ul li a:hover {
 .contact-info {
     display: inline-block; /* Make the div only as wide as the content */
 }
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.FCCACPlogo img{
+    width: 250px
+}
+.Clientlogo img{
+    width: 150px
+}
+.footer-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-logos img {
+    width: 100px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+.social-media img {
+    width: 100px; 
+    height: auto; 
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .benefit {
