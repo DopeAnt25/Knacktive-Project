@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'Balboa', Arial, sans-serif; /* Use Balboa font with fallback to Arial and generic sans-serif */
+    font-family:  Georgia, 'Times New Roman', Times, serif, sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 /* Header Styles */
 header {
     background-color: #f0f0f0;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -20,7 +20,6 @@ h1, h3{
 
 h2 {
     color: #f59f1d; /* Yellow */
-    font-family: balboa, sans-serif;
     font-style: bold;
     font-weight: 600;
 }
@@ -28,6 +27,16 @@ h2 {
 p{
     color: #2a2b6f; /* Dark blue */
 
+}
+
+/* top bar styles
+univerisal*/
+.top-bar {
+    background-color: #ddd; 
+    color: #2a2b6f;
+    padding: 5px 20px;
+    font-size: 14px;
+    text-align: right;
 }
 
 /* Section Styles */
@@ -42,37 +51,60 @@ section:hover {
 }
 
 /* Navigation Styles */
-nav {
-    background-color: #2a2b6f;
-    color: #fff;
-    text-align: center;
-}
-
-nav ul {
+#section-nav {
+    background-color: #f4f4f4; /* Background color */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  }
+  
+  #section-nav-title {
+    color: #333; /* Title color */
+    margin: 0 0 10px; /* Bottom margin */
+  }
+  
+  .section-links {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center items horizontally */
-}
-
-nav ul li {
-    margin: 0 10px; /* Add margins around each item */
-}
-
-nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
+  }
+  
+  .section-links li {
+    margin-bottom: 5px; /* Spacing between items */
+  }
+  
+  .section-links li a {
+    color: #555; /* Link color */
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s; /* Add transition for smoother effect */
+    display: block;
+    padding: 8px 15px; /* Padding */
+    border-radius: 3px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .section-links li a:hover {
+    background-color: #ddd; /* Background color on hover */
+  }
+  #imgRRR{
+    height: auto;
+    width: 100%;
+  }
+/*bootstrap navbar */
+.navbar-nav .nav-item {
+    margin-bottom: 10px; /* Add margin between each nav item */
 }
 
-nav ul li a:hover {
-    background-color: #36469d; /* Darker background color on hover */
-    color: #fff; /* Change text color on hover */
-    text-decoration: underline; 
+.navbar-nav .nav-link {
+    padding: 10px 15px; /* Add padding around each nav link */
+    color: #eeeeee;
+    word-wrap: break-word; /* Force the link text to wrap onto multiple lines if needed */
+}
+#Transportation {
+    padding-right: 15px;
+}
 
+.navbar-nav .nav-link:hover {
+    background-color: #2c3e50 !important; /* Change the background color on hover */
 }
 
 /* Container Styles */
@@ -81,8 +113,14 @@ nav ul li a:hover {
     margin: auto;
     padding: 20px;
 }
+.container img{
+    width: 100px;
+    height: auto;
+}
 
-/* Benefits Section Styles */
+
+/* Benefits Section Styles
+    Specific to HomePage */
 .benefits {
     display: flex;
     justify-content: space-between;
@@ -93,88 +131,149 @@ nav ul li a:hover {
     flex-basis: 48%;
     margin-bottom: 20px;
 }
+/* Avalible ISP's section
+Specific to applying page*/
+.isp-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Adjust as needed */
+}
 
-/* Style for the contact container */
+.isp-list li {
+    width: 45%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add margin between rows */
+}
+
+
+/* Style for the contact container
+Contact Page */
 .contact-container {
     display: flex;
     align-items: center; /* Vertically center items */
     justify-content: space-between;
 }
 
-/* Style for the contact info */
+/* Style for the contact info
+footer */
 .contact-info {
     margin-right: 20px; /* Add spacing between contact info and form */
+    display: inline-block; /* Make the div only as wide as the content */
+
+}
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Style for the form container */
+/* Style for the form container
+faq/contact */
 .form-container {
     flex: 1;
 }
 
-/* top bar styles*/
-.top-bar {
-    background-color: #ddd; 
-    color: #2a2b6f;
-    padding: 5px 20px;
-    font-size: 14px;
-    text-align: right;
-}
-
-.contact-info {
-    display: inline-block; /* Make the div only as wide as the content */
-}
+/*Footer Universal*/
 footer {
     background-color: #f0f0f0;
     padding: 20px 0;
-    
+    overflow-x: hidden;
+    border: 1px solid #ddd
 }
-
+/*Footer Universal*/
 .footer-nav ul {
     list-style-type: none;
     padding: 0; 
     margin: 0;
 }
 
+/*Footer Universal*/
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0 115px;
     
 }
+
+/*Footer Universal*/
 .FCCACPlogo img{
-    width: 250px
+    width: 175px
 }
+
+/*Footer Universal*/
 .Clientlogo img{
-    width: 150px
+    width: 100px
 }
+
+/*Footer Universal*/
 .footer-links a {
     margin-right: 20px;
     text-decoration: none;
     color: #333;
 }
 
+/*Footer Universal*/
 .footer-links a:hover {
     text-decoration: underline;
 }
 
+/*Footer Universal*/
 .footer-logos img {
     width: 100px; /* Adjust size as needed */
     margin-right: 20px;
+    padding-left: 50px;
 }
 
+/*Footer Universal*/
 .social-media a {
     margin-right: 10px;
 }
+
+/*Footer Universal*/
 .social-media img {
-    width: 100px; 
+    width: 50px; 
     height: auto; 
 }
+/*Footer Universal*/
 .copyright {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Responsive Styles */
+.HeaderLogo img{
+    width: 150px;
+    height: auto;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Add CSS for the paragraphs */
+.paragraphs {
+    flex: 1; /* Take up remaining space */
+}
+
+/* Add CSS for the image wrapper */
+.image-wrapper {
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* Add CSS for the image */
+#imgGOALS {
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    min-width: 200px; /* Set a minimum width for the image */
+}
+
+/* Responsive Styles 
+Check on nav bar need a differnet size to horiz Verti
+*/
 @media screen and (max-width: 768px) {
     .benefit {
         flex-basis: 100%;
@@ -191,5 +290,27 @@ footer {
     .contact-info {
         margin-right: 0; /* Remove margin */
         margin-bottom: 20px; /* Add margin between contact info and form */
+    }
+
+    header {
+        padding: 10px 0; /* Adjusted padding */
+    }
+    nav ul li a {
+        padding: 8px; /* Adjusted padding */
+    }
+    .footer-logos img {
+        width: 80px; /* Adjusted size for footer logos */
+        margin-right: 10px; /* Adjusted margin */
+    }
+    .social-media img {
+        width: 50px; /* Adjusted size for social media icons */
+        margin-right: 5px; /* Adjusted margin */
+    }
+    .isp-list li {
+        width: 100%; /* Set width to 100% for smaller screens */
+        margin-bottom: 10px; /* Reduce margin between rows */
+    }
+    #imgGOALS {
+        min-width: 100px; /* Adjust minimum width for smaller screens */
     }
 }

@@ -6,6 +6,8 @@
     <title>ACP Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -16,29 +18,59 @@
             114 W. Third St. | Maryville, MO 64468 | 660-582-5121
         </div>
     </div>
+    <nav class="navbar navbar-expand-lg" style="background-color: #404b60;">
+        <div class="container">
+            <a class="navbar-brand" href="NWMOHome.html"><img src="LogoA-FC.png" alt="ClientLogo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="NWMOHome.html">Report Library</a></li>
+                <li class="nav-item" id="Transportation"><a class="nav-link" href="NWMOHome.html">Transportation</a></li>
+                <li class="nav-item" id="Economic"><a class="nav-link" href="NWMOHome.html">Economic Development</a></li>
+                <li class="nav-item"><a class="nav-link" href="NWMOHome.html">Hazard Mitigation</a></li>
+                <li class="nav-item"><a class="nav-link" href="NWMOWaste.html">Solid Waste</a></li>
+                <li class="nav-item"><a class="nav-link" href="NWMOHome.html">Grant Administration</a></li>
+                <li class="nav-item"><a class="nav-link" href="NWMOHome.html">Funding Opportunities</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="ACPHOME.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ACP (NEW!)
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ACPHOME.html">ACP Home</a></li>
+                        <li><a class="dropdown-item" href="ACPApplying.html">ACP Applying</a></li>
+                        <li><a class="dropdown-item" href="ACPFAQ.html">ACP FAQs</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
     <header>
         <h1>Affordable Connectivity Program</h1>
         <p>Bringing affordable internet access to everyone</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="ACPHOME.html">Homepage</a></li>
-            <li><a href="ACPApplying.html">Applying</a></li>
-            <li><a href="ACPFAQ.html">FAQs & Contact</a></li>
-        </ul>
-    </nav>
 
     <div class="container">
         <section>
             <h2>What is the ACP?</h2>
-            <p>Provide a concise explanation of the ACP's purpose and objectives. Describe how it aims to make internet access more affordable for low-income households. Highlight the significance of internet connectivity in today's digital age, emphasizing its importance for education, employment, healthcare, and social inclusion.</p>
+            <p>The Affordable Connectivity Program is a $14.2 billion program that supports eligible low- income households
+                struggling to afford monthly internet service. This critical program ensures that households have the connections
+                they need for work, school, healthcare, and more.
+                </p>
         </section>
         <section>
             <h2>How it Could Benefit You</h2>
             <div class="benefits">
                 <div class="benefit">
                     <h3>Access to Affordable Internet</h3>
-                    <p>Eligible individuals can gain access to affordable internet service, facilitating online learning, job searches, telemedicine appointments, and staying connected with friends and family.</p>
+                    <p>The benefit provides a discount of up to $30 per month toward internet service for eligible households and up to
+                        $75 per month for households on qualifying Tribal lands.
+                        Eligible households can also receive a one-time discount of up to $100 to purchase a laptop, desktop computer, or
+                        tablet from participating providers if they contribute more than $10 and less than $50 toward the purchase price.
+                        The Affordable Connectivity Program is limited to one monthly service discount and one device discount per
+                        household.</p>
                 </div>
                 <div class="benefit">
                     <h3>Real-life Examples</h3>
@@ -48,7 +80,15 @@
         </section>
         <section>
             <h2>Who Could Qualify?</h2>
-            <p>Clearly define the eligibility criteria for the ACP, including income requirements and other factors that may determine eligibility (e.g., participation in certain assistance programs like SNAP or Medicaid). Provide guidance on how individuals can determine if they qualify for the program and where they can find more information or assistance with the application process. Address common questions or misconceptions about eligibility to ensure clarity for potential applicants.</p>
+            <p>A household is eligible if a member of the household meets at least <b>one</b> of the criteria below:</p>
+            <ul>
+                <li>Has an income that is at or below 200% of the federal poverty guidelines;</li>
+                <li>Participates in certain assistance programs, such as SNAP, Medicaid, Federal Public Housing Assistance, SSI, WIC, or Lifeline;</li>
+                <li>Participates in Tribal specific programs, such as Bureau of Indian Affairs General Assistance, Tribal TANF, or Food Distribution Program on Indian Reservations;</li>
+                <li>Is approved to receive benefits under the free and reduced-price school lunch program or the school breakfast program in the current or immediately preceding school year;</li>
+                <li>Received a Federal Pell Grant during the current award year; or</li>
+                <li>Meets the eligibility criteria for a participating provider's existing low-income program.</li>
+            </ul>
         </section>
     </div>
     <footer>

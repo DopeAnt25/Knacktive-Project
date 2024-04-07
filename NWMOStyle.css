@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+    font-family:  Georgia, 'Times New Roman', Times, serif, sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1, h3{
+    color: #2a2b6f; /* Dark blue */
+}
+
+/*Paragraph Styles*/
+p{
+    color: #2a2b6f; /* Dark blue */
+
+}
+
+/* top bar styles
+univerisal*/
+.top-bar {
+    background-color: #ddd; 
+    color: #2a2b6f;
+    padding: 5px 20px;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
+}
+
+section:hover {
+    background-color: #f9f9f9; 
+}
+
+
+/*bootstrap navbar */
+.navbar-nav .nav-link{
+    color: #eeeeee;
+}
+.navbar-nav .nav-link:hover {
+    background-color: #2c3e50 !important; /* Change the background color on hover */
+}
+
+
+
+/* Responsive Styles 
+Check on nav bar need a differnet size to horiz Verti
+*/
+@media screen and (max-width: 768px) {
+    
+}
