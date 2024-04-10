@@ -16,6 +16,7 @@ header {
 /* Heading Styles */
 h1, h3{
     color: #2a2b6f; /* Dark blue */
+    padding: 15px;
 }
 
 h2 {
@@ -271,6 +272,50 @@ footer {
     min-width: 200px; /* Set a minimum width for the image */
 }
 
+#imgHHW {
+    width: 100%;
+    max-width: 1080px; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+#imgRECYCLE {
+    width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 5px; /* Add a border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+.centered-links {
+    text-align: center;
+}
+
+.centered-links a {
+    text-decoration: none;
+    color: #2a2b6f; /* Dark blue */
+    margin: 10px; /* Add some space between the links */
+}
+#recycleLINK{
+    text-decoration: none;
+    color: #2a2b6f; /* Dark blue */
+    margin: 10px; /* Add some space between the links */
+}
+#recycleLINK a:hover {
+    text-decoration: underline;
+}
+.centered-links a:hover {
+    text-decoration: underline;
+}
+/* Adjust the first image in the carousel */
+#carouselExampleControls .carousel-item img {
+    object-fit: cover;
+}
+#carouselExampleControls2 .carousel-item img {
+    object-fit: cover;
+}
+.carousel-inner img {
+    max-height: 750px; /* Adjust the maximum height as needed */
+}
+
 /* Responsive Styles 
 Check on nav bar need a differnet size to horiz Verti
 */
@@ -312,5 +357,8 @@ Check on nav bar need a differnet size to horiz Verti
     }
     #imgGOALS {
         min-width: 100px; /* Adjust minimum width for smaller screens */
+    }
+    .image-collection img {
+        flex-basis: 45%; /* Adjust image width for smaller screens */
     }
 }
